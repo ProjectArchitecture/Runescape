@@ -4,7 +4,7 @@
 
 # Runescape: The private server project. 
 
-[![Maintenance](https://img.shields.io/badge/Maintained%3F-no-red.svg)](https://bitbucket.org/lbesson/ansi-colors) [![Latest release](https://badgen.net/github/release/Naereen/Strapdown.js)](https://github.com/Naereen/Strapdown.js/releases)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity) [![Latest release](https://badgen.net/github/release/Naereen/Strapdown.js)](https://github.com/Naereen/Strapdown.js/releases)
 
 A Runescape private server based on the 2009 era.
 This repository contains the code for the Runescape private server project, and this repo is soley maintained by @Avanae and @ThePolyphia and @Xeveral
