@@ -2,7 +2,7 @@
 
 ---
 
-# Runescape: The Runescape private server project. 
+# Runescape: The private server project. 
 
 
 A Runescape private server based on the 2009 era.
