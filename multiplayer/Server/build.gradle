@@ -1,0 +1,50 @@
+apply plugin: 'application'
+
+
+archivesBaseName = 'server'
+
+mainClassName = 'rs09.Server'
+
+compileJava {
+    options.encoding = "UTF-8"
+}
+
+compileKotlin {
+    kotlinOptions {
+        jvmTarget = JavaVersion.VERSION_1_8
+        freeCompilerArgs += '-XXLanguage:-NewInference'
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.jetbrains.kotlin:kotlin-reflect:1.5.20'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
+    implementation group: 'com.moandjiezana.toml', name: 'toml4j', version: '0.7.2'
+    implementation files(
+            "libs/PrimitiveExtensions-1.0.jar",
+            "libs/ConstLib-1.4.jar",
+            "libs/json-simple-1.1.1.jar",
+            "libs/markdown-jvm-0.2.4.jar",
+            "libs/classgraph-4.8.98.jar",
+            "libs/mysql-connector-java-8.0.21.jar",
+            "libs/mordant-jvm-2.0.0-alpha2.jar",
+            "libs/colormath-jvm-2.0.0.jar",
+            "libs/sqlite-jdbc.jar"
+    )
+}
+
+/*sourceSets {
+    main.java.srcDirs = ['src/main/java']
+    main.kotlin.srcDirs = ['src/main/kotlin']
+}*/
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'rs09.Server'
+    }
+    from { configurations.compileClasspath.collect { it.isDirectory() ? it : zipTree(it) } }
+}
