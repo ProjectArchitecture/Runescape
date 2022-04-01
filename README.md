@@ -2,6 +2,8 @@
 
 ---
 
-# Runescape: The Runescape private server project. A Runescape private server based on the 2009 era.
+# Runescape: The Runescape private server project. 
 
+
+A Runescape private server based on the 2009 era.
 This repository contains the code for the Runescape private server project, that's soley maintained by @Avanae and @ThePolyphia and @Xeveral
