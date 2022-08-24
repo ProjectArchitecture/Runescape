@@ -11,4 +11,4 @@
 A Runescape private server based on the 2009 era.
 This repository contains the code for the Runescape private server project, and this repo is soley maintained by @Avanae and @ThePolyphia and @Xeveral
 
-This repo soley exists for archive sake and may be outdated. It is recommended to regularly check [2009scape's Github](https://github.com/2009scape)
+This repo soley exists for archive sake and may be outdated. It is recommended to regularly check [2009scape's Gitlab](https://gitlab.com/2009scape/singleplayer/windows)
